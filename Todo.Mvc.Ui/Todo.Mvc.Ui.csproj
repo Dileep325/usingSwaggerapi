@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>D:\testing_projects\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TodoApiController.cs" />
+    <Compile Include="Controllers\TodoController.cs" />
+    <Compile Include="Models\ErrorViewModel.cs" />
+    <Compile Include="Models\WorkAround.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.0\Todo.Mvc.Ui.AssemblyInfo.cs" />
+    <Compile Include="obj\Release\netcoreapp2.0\Todo.Mvc.Ui.AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.Development.json" />
+    <Content Include="appsettings.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\Todo.Mvc.Ui.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\Todo.Mvc.Ui.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\Todo.Mvc.Ui.runtimeconfig.json" />
+    <Content Include="bower.json" />
+    <Content Include="bundleconfig.json" />
+    <Content Include="obj\Debug\netcoreapp2.0\Todo.Mvc.Ui.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\Todo.Mvc.Ui.csproj.nuget.dgspec.json" />
+    <Content Include="Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+    <PackageReference Include="SmartIT.DebugTaceHelper" Version="1.0.1" />
+    <PackageReference Include="SmartIT.Employee.MockDB" Version="1.0.5" />
+    <PackageReference Include="Swashbuckle" Version="5.6.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Release\netcoreapp2.0\" />
+    <Folder Include="Data\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".bowerrc" />
+    <None Include="bin\Debug\netcoreapp2.0\Todo.Mvc.Ui.dll" />
+    <None Include="bin\Debug\netcoreapp2.0\Todo.Mvc.Ui.pdb" />
+    <None Include="obj\Debug\netcoreapp2.0\Todo.Mvc.Ui.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\Todo.Mvc.Ui.assets.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\Todo.Mvc.Ui.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\Todo.Mvc.Ui.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\Todo.Mvc.Ui.dll" />
+    <None Include="obj\Debug\netcoreapp2.0\Todo.Mvc.Ui.pdb" />
+    <None Include="obj\Release\netcoreapp2.0\Todo.Mvc.Ui.AssemblyInfoInputs.cache" />
+    <None Include="obj\Release\netcoreapp2.0\Todo.Mvc.Ui.assets.cache" />
+    <None Include="obj\Release\netcoreapp2.0\Todo.Mvc.Ui.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Todo.Mvc.Ui.csproj.nuget.cache" />
+    <None Include="obj\Todo.Mvc.Ui.csproj.nuget.g.props" />
+    <None Include="obj\Todo.Mvc.Ui.csproj.nuget.g.targets" />
+    <None Include="ScaffoldingReadMe.txt" />
+  </ItemGroup>
+
+</Project>
